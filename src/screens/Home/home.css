@@ -10,6 +10,7 @@ header {
   margin-top: 40px;
   position: fixed;
   z-index: 1;
+  background: #fff;
 }
 
 .container__menu {
@@ -21,13 +22,14 @@ header {
 }
 
 .logo {
+  margin-top: 10px;
   height: 100%;
   display: flex;
   align-items: center;
 }
 
 .logo img {
-  width: 60px;
+  width: 120px;
 }
 
 .menu {
@@ -39,14 +41,17 @@ header {
   display: flex;
 }
 
+.menu ul div {
+  align-items: center;
+}
+
 .menu ul li {
+  border-radius: 40px;
   list-style: none;
   margin-left: 36px;
 }
 
 .menu ul li a {
-  text-decoration: none;
-  color: #d2c4c4;
   font-size: 18px;
   text-transform: uppercase;
 }
@@ -65,7 +70,7 @@ header {
 }
 
 .cover {
-  max-width: 1700px;
+  max-width: 1800px;
   height: 100%;
   margin: auto;
   display: flex;
@@ -73,17 +78,21 @@ header {
   justify-content: space-between;
 }
 
+.text {
+  color: #fff;
+}
+
 .container__cover .text {
   max-width: 400px;
 }
 
 .container__cover .text h1 {
-  font-size: 36px;
   font-weight: 600;
+  font-size: 5rem;
 }
 
 .container__cover .text p {
-  font-size: 18px;
+  font-size: 2rem;
   margin-top: 40px;
 }
 
@@ -106,6 +115,7 @@ header {
 }
 
 .container__cover .svg img {
+  border-radius: 200px;
   width: 800px;
   animation: move-vector 4s linear infinite;
 }

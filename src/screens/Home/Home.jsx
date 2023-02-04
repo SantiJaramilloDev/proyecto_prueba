@@ -21,10 +21,22 @@ export const Home = () => {
             <div className='menu'>
               <nav>
                 <ul>
-                  <li><a href="#">Inicio</a></li>
-                  <li><a href="#">Gift</a></li>
-                  <li><a href="#">Juegos</a></li>
-                  <li><a href="#">Perfil</a></li>
+                  <div className='btn btn-outline-primary'>
+                    <li><a onClick={() => history('/app-gif')}>Inicio</a></li>
+                  </div>
+                  <div className='btn btn-outline-primary'>
+                    <li><a onClick={() => history('/app-gif')}>Gift</a></li>
+                  </div>
+                  <div className='btn btn-outline-primary'>
+                    <li><a onClick={() => history('/info-games')}>Juegos</a></li>
+                  </div>
+                  <div className='btn btn-outline-primary'>
+                    <li><a onClick={() => history('/app-gif')}>Perfil</a></li>
+                  </div>
+                 
+                  
+                  
+                  
                 </ul>
               </nav>
             </div>
