@@ -1,15 +1,123 @@
-body {
-  font-family: Helvetica, Arial, sans-serif;
-  background: rgb(119, 183, 192);
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-button {
-  border-radius: 10px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
+header {
+  width: 100%;
+  height: 80px;
+  margin-top: 40px;
+  position: fixed;
+  z-index: 1;
+}
+
+.container__menu {
+  max-width: 1800px;
+  height: 100%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  width: 60px;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+}
+
+.menu ul {
+  display: flex;
+}
+
+.menu ul li {
+  list-style: none;
+  margin-left: 36px;
+}
+
+.menu ul li a {
+  text-decoration: none;
+  color: #d2c4c4;
+  font-size: 18px;
+  text-transform: uppercase;
+}
+
+/*COVER*/
+
+.container__cover {
+  width: 100%;
+  height: 1500px;
+  background-image: url(../../assets/background-image-home.jpg);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cover {
+  max-width: 1700px;
+  height: 100%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.container__cover .text {
+  max-width: 400px;
+}
+
+.container__cover .text h1 {
+  font-size: 36px;
   font-weight: 600;
-  background-color: #c92993;
+}
+
+.container__cover .text p {
+  font-size: 18px;
+  margin-top: 40px;
+}
+
+.container__cover .text input {
+  padding: 18px 80px;
+  border: none;
+  font-size: 16px;
+  border-radius: 50px;
+  margin-top: 40px;
+  background: linear-gradient(90deg, #ff8c00, #ff0000);
+  color: #fff;
   cursor: pointer;
-  margin-right: 30px;
+  box-shadow: 1px 1px 30px -12px #ff0000;
+  transition: all 300ms;
+}
+
+.container__cover .text input:hover {
+  background: linear-gradient(90deg, #ff0000, #ff8c00);
+  box-shadow: 1px 1px 30px -6px #ff0000;
+}
+
+.container__cover .svg img {
+  width: 800px;
+  animation: move-vector 4s linear infinite;
+}
+
+@keyframes move-vector {
+  0% {
+    transform: translateY(15px);
+  }
+  50% {
+    transform: translateY(0px);
+  }
+  100% {
+    transform: translateY(15px);
+  }
 }
