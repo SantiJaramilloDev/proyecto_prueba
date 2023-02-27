@@ -1,0 +1,9 @@
+.body-card{
+    background: rgb(114,3,138);
+    background: linear-gradient(
+        77deg, 
+        rgba(114,3,138,1) 0%, 
+        rgba(9,47,121,1) 49%, 
+        rgba(0,219,255,1) 100%);
+}
+
