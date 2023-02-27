@@ -1,0 +1,37 @@
+.card{
+    margin-top: 40px;
+}
+
+.card-text{
+    font-size: 100rem;
+}
+
+.image2{
+    width: 0px;
+    height: 0px;
+}
+
+.card:hover{    
+    box-shadow: 10px 20px 30px 30px black;
+}
+
+.card:hover .image2{
+    width: 630px;
+    height: 350px;
+    transition: all 500ms;
+}
+
+.card:hover .image{
+    width: 0px;
+    height: 0px;
+}
+
+.card-body{
+    width: 0px;
+    height: 0px;
+}
+
+.card:hover .card-body{
+    width: 630px;
+    height: 280px;
+}

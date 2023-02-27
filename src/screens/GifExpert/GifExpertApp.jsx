@@ -1,6 +1,8 @@
 import {useState} from 'react';
 import { AddCategory } from '../../components/AddCategory';
+import { Footer } from '../../components/footer/Footer';
 import { GifGrid } from '../../components/GifGrid';
+import './GifExpertApp.css'
 
 export const GifExpertApp = () => {
 
@@ -15,7 +17,8 @@ export const GifExpertApp = () => {
 
   return (
     <>
-      <h1>GifExpertApp</h1>
+      <div className='body-gif'>
+      <h1>Gif of your games</h1>
 
       <AddCategory 
         // setsCategories = {setsCategories}
@@ -27,6 +30,8 @@ export const GifExpertApp = () => {
             key = {category}
             category = {category}/>
       ))}
+      </div>
+      <Footer/>
     </>
   )
 }
