@@ -42,7 +42,7 @@ export const InfoGames = () => {
   return (
     <>
       <div className="body-card">
-        <VentanasModales />
+        <VentanasModales  />
           <div className="container">
             <div className="row">
               {

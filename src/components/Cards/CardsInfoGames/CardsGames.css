@@ -1,5 +1,6 @@
 .card{
   margin-top: 40px; 
+  position: static !important;
 }
 
 .card-title{
