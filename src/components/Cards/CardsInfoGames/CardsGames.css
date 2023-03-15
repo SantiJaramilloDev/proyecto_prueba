@@ -1,6 +1,5 @@
 .card{
-  margin-top: 40px; 
-  position: static !important;
+  margin-top: 40px;
 }
 
 .card-title{
@@ -21,7 +20,7 @@
 }
 
 .card:hover .image{
-  position:absolute;
+  position: absolute;
   opacity: 0;
   visibility: hidden;
   transition: opacity 250ms, visibility 250ms;
@@ -41,7 +40,7 @@
   width: 100%;
   height: auto;
   padding: 20px;
-  transition: all 0.2s ease-in;
+  transition: all 0.3s ease;
 }
 
 .button{
@@ -50,6 +49,7 @@
   padding: 15px;
   border-radius: 7px;
   font-weight: bold;
+  cursor: pointer;
 }
 
 .button:hover{
@@ -58,4 +58,5 @@
   border: 2px solid black;
   box-shadow: 4px 5px 6px rgb(95, 93, 93);
   font-weight: bold;
+  transition: all 300ms;
 }

@@ -1,6 +1,10 @@
+import { useState } from 'react'
+import {VentanasModales} from '../../Ventanas Modales/VentanasModales'
 import './CardsGames.css'
 
-export const CardsGames = ({title, text, image, buttonUrl,image2}) => {
+export const CardsGames = ({title, text, image, buttonUrl, image2}) => {
+
+  const [estadoModal, cambiarEstadoModal] = useState(false);
 
   return (
     <>
@@ -10,9 +14,11 @@ export const CardsGames = ({title, text, image, buttonUrl,image2}) => {
         <div className="card-bodyy">
           <h2 className="card-title">{title}</h2>
           <p className='card-text'>{text}</p>
-          <a href={buttonUrl} className="button" target='_blank'>Ver más</a>
-          </div>
+          <a onClick={() => cambiarEstadoModal (!estadoModal)} className="button" target="_blank" >Ver mas</a>
+        </div>
       </div>
+      <VentanasModales estado = {estadoModal} cambiarEstado = {cambiarEstadoModal} title= {title} text={text} image ={image}>
+      </VentanasModales>
     </>
   )
 }

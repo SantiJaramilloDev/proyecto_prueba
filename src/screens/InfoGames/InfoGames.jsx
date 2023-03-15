@@ -1,11 +1,10 @@
 import { CardsGames } from "../../components/Cards/CardsInfoGames/CardsGames"
 import { Footer } from "../../components/footer/Footer";
-import { VentanasModales } from "../../components/Ventanas Modales/VentanasModales";
 import './InfoGames.css'
 
 export const InfoGames = () => {
 
-  const cards = [
+  const games = [
     {
       id: '1',
       title: 'GTA V',
@@ -42,18 +41,17 @@ export const InfoGames = () => {
   return (
     <>
       <div className="body-card">
-        <VentanasModales  />
-          <div className="container">
-            <div className="row">
-              {
-                cards.map(card => (
-                  <div className="col-md-6" key={card.id}>
-                    <CardsGames title={card.title} text={card.text} image={card.image} buttonUrl={card.buttonUrl} image2={card.image2} />
-                  </div>
-                ))
-              }
-            </div>
+        <div className="container">
+          <div className="row">
+            {
+              games.map(card => (
+                <div className="col-md-6" key={card.id}>
+                  <CardsGames  title={card.title} text={card.text} image={card.image} buttonUrl={card.buttonUrl} image2={card.image2} />
+                </div>
+              ))
+            }
           </div>
+        </div>
         <Footer />
       </div>
     </>
