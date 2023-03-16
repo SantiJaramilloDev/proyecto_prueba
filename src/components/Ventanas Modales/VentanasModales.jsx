@@ -1,13 +1,13 @@
 import './VentanasModales.css'
 
-export const VentanasModales = ({ title, text, image, estado, cambiarEstado }) => {
+export const VentanasModales = ({ estado, cambiarEstado, title, text2, image3, title2, text3, image4, title3, text4, image5, buttonTr, buttonSh}) => {
   return (
     <>
       { estado &&
           <div className="body-vm">
             <div className='container1'>
               <div className="header-vm">
-                <h4>Top Info Games</h4>
+                <h4 className='title-hd'>Top Info Games</h4>
               </div>
               <button className='button-close' onClick={() => cambiarEstado(false)}>
                 <svg className="icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"  viewBox="0 0 16 16">
@@ -16,8 +16,18 @@ export const VentanasModales = ({ title, text, image, estado, cambiarEstado }) =
               </button>
               <div className='content-vm'>
                 <h2 className='title-vm'>{title}</h2>
-                <p className='text-vm'>{text}</p>
-                <img className='image-vm' src= {image} alt="" />
+                <p className='text-vm'>{text2}</p>
+                <img className='image-vm' src= {image3} alt="" />
+                <h2 className='title-vm'>{title2}</h2>
+                <p className='text-vm'>{text3}</p>
+                <img className='image-vm' src= {image4} alt="" />
+                <h2 className='title-vm'>{title3}</h2>
+                <p className='text-vm'>{text4}</p>
+                <img className='image-vm' src= {image5} alt="" />
+                <div className='buttons-vm'>
+                  <a href={buttonTr} className="button-vm" target="_blank">Trailer</a>
+                  <a href={buttonSh} className="button-vm" target="_blank">Obetener</a>
+                </div>
             </div>
           </div>
         </div>
