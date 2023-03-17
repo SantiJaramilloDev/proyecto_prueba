@@ -30,12 +30,12 @@
     padding-bottom: 15px;
     margin-top: 10px;
     margin-bottom: 15px;
-    border-bottom: 3px solid rgb(255, 3, 3);
+    border-bottom: 3px solid rgb(114,3,138);
 }
 
 .title-hd{
     font-weight: bold;
-    text-shadow: 1px 2px 1px rgb(52, 158, 207);
+    text-shadow: 1px 2px 4px rgba(0,219,255,1)
 }
 
 .button-close{
@@ -67,17 +67,18 @@
 
 .title-vm{
     font-weight: bold;
-    text-shadow: 1px 2px 1px rgb(52, 158, 207);
+    text-shadow: 1px 2px 4px rgba(0,219,255,1)
 }
 
 .text-vm{
     font-size: 18px;
     text-align: justify;
     margin: 4px;
+    font-weight: bold;
 }
 
 .image-vm{
-    margin-top: 20px;
+    margin-top: 10px;
     margin-bottom: 10px;
     height: 300px;
     border-radius: 20px;
@@ -88,6 +89,7 @@
     margin-top: 30px;
     display: flex;
     justify-content: space-around;
+    border-top: 3px solid rgb(114,3,138);
 }
 
 .button-vm{
@@ -98,6 +100,7 @@
     font-weight: bold;
     cursor: pointer;
     font-size: 22px;
+    margin-top: 25px;
 }
 
 .button-vm:hover{

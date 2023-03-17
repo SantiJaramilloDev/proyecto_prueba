@@ -26,7 +26,7 @@ export const VentanasModales = ({ estado, cambiarEstado, title, text2, image3, t
                 <img className='image-vm' src= {image5} alt="" />
                 <div className='buttons-vm'>
                   <a href={buttonTr} className="button-vm" target="_blank">Trailer</a>
-                  <a href={buttonSh} className="button-vm" target="_blank">Obetener</a>
+                  <a href={buttonSh} className="button-vm" target="_blank">Obtener</a>
                 </div>
             </div>
           </div>
