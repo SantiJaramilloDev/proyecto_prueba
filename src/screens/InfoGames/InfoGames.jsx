@@ -1,4 +1,5 @@
 import { CardsGames } from "../../components/Cards/CardsInfoGames/CardsGames"
+import { Header } from "../../components/Header/Header";
 import { Footer } from "../../components/footer/Footer";
 import './InfoGames.css'
 
@@ -80,8 +81,9 @@ export const InfoGames = () => {
 
   return (
     <>
+      <Header/>
       <div className="body-card">
-        <div className="container">
+        <div className="cont-cards container">
           <div className="row">
             {
               games.map(card => (

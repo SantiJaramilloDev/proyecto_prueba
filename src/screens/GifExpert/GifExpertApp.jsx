@@ -1,5 +1,6 @@
 import {useState} from 'react';
 import { AddCategory } from '../../components/AddCategory';
+import { Header } from '../../components/Header/Header';
 import { Footer } from '../../components/footer/Footer';
 import { GifGrid } from '../../components/GifGrid';
 import './GifExpertApp.css'
@@ -17,6 +18,7 @@ export const GifExpertApp = () => {
 
   return (
     <>
+    <Header />
       <div className='body-gif'>
       <h1>Gif of your games</h1>
 
