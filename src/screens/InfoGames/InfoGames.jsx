@@ -63,7 +63,7 @@ export const InfoGames = () => {
     {
       id: '4',
       title: 'Brawl Stars',
-      image: 'https://blog.brawlstars.com/uploaded-images/_549x308_crop_center-center_90/691681060_1670827244.jpg?mtime=20221212064044',
+      image: 'https://prod.assets.earlygamecdn.com/images/AllBrawlers-Banner.jpg?mtime=1668421200',
       text: 'Brawl Stars es un campo de batalla en línea multijugador y un videojuego de disparos de héroes en tercera persona desarrollado y publicado por la compañía de videojuegos finlandesa Supercell',
       image2: 'https://www.movilzona.es/app/uploads-movilzona.es/2022/08/todos-personajes-brawl-stars.jpg',
       // informacion de relleno para el modal
