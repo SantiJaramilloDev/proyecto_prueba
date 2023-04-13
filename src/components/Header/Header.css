@@ -41,3 +41,12 @@ header {
   font-size: 18px;
   font-weight: bold;
 }
+
+.button-header:hover{
+  background-color: white;
+  color: black;
+  border: 2px solid black;
+  box-shadow: 4px 5px 6px rgb(95, 93, 93);
+  font-weight: bold;
+  transition: all 300ms;
+}
