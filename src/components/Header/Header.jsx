@@ -17,7 +17,7 @@ export const Header = () => {
             <button className='button-header' onClick={() => history('/')}>Inicio</button>
             <button className='button-header' onClick={() => history('/app-gif')}>Gift</button>
             <button className='button-header' onClick={() => history('/info-games')}>Juegos</button>
-            <button className='button-header' onClick={() => history('/app-gif')}>Login</button>
+            {/* <button className='button-header' onClick={() => history('/app-gif')}>Login</button> */}
           </div>
         </div>
       </header>

@@ -16,7 +16,7 @@ export const Home = () => {
           <div className="cover">
             <div className="text">
               <h1>Top Info Games</h1>
-              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dignissimos fuga ipsam saepe cupiditate assumenda fugiat eos ducimus expedita asperiores sed.</p>
+              <p>Sumérgete en el mundo de los videojuegos. Descubre información, secretos y recomendaciones para que nunca te falte un nuevo juego por explorar.</p>
               <input type='button' value='Leer Más' />
             </div>
             <div className="svg">
